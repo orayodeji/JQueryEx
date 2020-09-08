@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="fir.js"></script>
+    <style>
+        body{
+            font-style: italic;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            height: 100%;
+            background: rgb(192, 199, 179);
+        }
+        .container{
+            background: rgb(192, 216, 155);
+            height: 80%;
+            width: 70%;
+            margin: 0 auto;
+            padding-bottom: 40px;
+            border-radius: 20px;
+         }
+         i{
+             pointer-events: none;
+         }
+        ul{
+            border-radius: 8px;
+            width: 60%;
+            background-color: rgb(175, 196, 196);
+            list-style: none;
+            margin: 30px auto;
+            padding: 15px 0;
+            
+        }
+        li{
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: space-between;
+            background: rgb(196, 142, 142);
+            padding: 8px 10px;
+            margin: 10px auto;
+            width: 80%;
+            border-radius: 5px;
+        }
+        h1{
+            padding-top: 30px;
+            text-align: center;
+        }
+        form{
+            text-align: center;
+            font-size: 20px;
+        }
+        #input{
+            height: 30px;
+            font-size: 25px;
+        }
+        #submitButton{
+            text-align: center;
+            height: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="newDiv"></div>
+    <div class="container">
+        <h1>My Todo List</h1>
+        <form id="myForm">
+            <input type="text" id="input" placeholder="enter your tasks">
+            <input type="submit" id="submitButton">
+        </form>
+        <div>
+            <ul id="todoList" ></ul>
+        </div>
+    </div>
+    <script src="second.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="fir.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <style>
+        body{
+            font-family:monospace;
+            height: 800px;
+        }
+        tr{
+            display: flex;
+            width: 80%;
+            flex-direction: row;
+            
+            background: lightseagreen;
+            padding: 5px;
+            border-radius: 5px;
+            margin-bottom: 9px;
+
+
+        }
+       
+       
+       
+        button{
+            margin: 1px;
+            font-size: 4px;
+            
+        }
+        h1{
+            background: rgb(109, 122, 90);
+            text-align: center;
+            padding: 9px 0;
+           border-radius: 9px;
+        }
+       
+        .row-button{
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        #gum{
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .project{
+            justify-content: space-between;
+        }
+        .container{
+            justify-content: center;
+            border: 2px solid black;
+            border-radius: 15px;
+            background: rgb(50, 145, 148);
+
+        }
+        table{
+            
+            margin: 0 auto;
+            width: 70%;
+            padding:10px 0;
+        }
+        tr{
+            justify-content: space-between;
+        }
+        #top{
+            background: greenyellow;
+            border-radius: 10px;
+
+        }
+        #newForm{
+            padding: 10px 0;
+            text-align: center;
+        }
+        th{
+            padding: 0 5px;
+        }
+        #sortUpRatings, #sortUpTitle, #sortDownRatings, #sortDownTitle{
+            background: rgb(122, 103, 103);
+            border-radius: 5px;
+            font-size: 05px;
+            color: white;
+        }
+        #erase{
+            background: red;
+            font-size: 11px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Movies Today</h1>
+        <form id="newForm">
+            <label for="title">Title</label>
+            <input type="text" id="title">
+            <label for="ratings">Ratings</label>
+            <input type="number" id="ratings" min="1" max="10">
+            <input type="submit" value="ADD">
+        </form>
+
+        <table>
+            <thead>
+            <tr id="top">
+                <th id="gum"><h2>Title</h2><div class="row-button"><button id="sortUpTitle"><i class="fas fa-sort-up"></i></button><button id="sortDownTitle"><i class="fas fa-sort-down"></i></button></div> </th>
+                <th id="gum"><h2>Ratings</h2><div class="row-button"><button id="sortUpRatings"><i class="fas fa-sort-up"></i></button><button id="sortDownRatings"><i class="fas fa-sort-down"></i></button></div> </th>
+                <th id="gum"><h2>Delete</h2></th>
+            </tr>    
+            </thead>
+            <tbody>
+
+            </tbody>
+            
+        </table>
+    </div>
+    <script src="third.js"></script>
+</body>
+</html>
